@@ -1,0 +1,26 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="definition" template="/view/template/layout/template.jsp">
+	
+		<put-attribute name="header" value="/view/template/layout/header.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/view/template/layout/footer.jsp"></put-attribute>
+		
+	</definition>
+	<definition name="home" extends="definition">
+		<put-attribute name="title" value="PhysicEducation"></put-attribute>
+		<put-attribute name="body" value="/view/home/physiceducation.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/resources/css/home.css"></add-attribute>		
+		</put-list-attribute>
+	</definition>
+	<definition name="profile" extends="definition">
+		<put-attribute name="title" value="Profile"></put-attribute>
+		<put-attribute name="body" value="/view/home/profile.jsp"></put-attribute>
+		<put-list-attribute name="stylesheets">
+			<add-attribute value="/resources/css/profile.css"></add-attribute>		
+		</put-list-attribute>
+	</definition>
+</tiles-definitions>

@@ -106,7 +106,7 @@
 
 			<configuration>
 				<propertyFile>src/main/resources/database.properties</propertyFile>
-				<changeLogFile>src/main/resources/liquidbase/db.changelog-dbmaster.xml
+				<changeLogFile>src/main/resources/liquibase/db.changelog-dbmaster.xml
 				</changeLogFile>
 				<promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
 			</configuration>
